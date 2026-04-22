@@ -1,0 +1,21 @@
+[package]
+name = "postgres-profiler"
+version = "0.1.0"
+description = "A Tauri desktop app for capturing and inspecting PostgreSQL query logs."
+edition = "2021"
+
+[lib]
+name = "postgres_profiler_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+csv = "1"
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tokio = { version = "1", features = ["full"] }
