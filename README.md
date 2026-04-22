@@ -1,5 +1,7 @@
 # PostgreSQL Query Log Monitor
 
+<img width="1434" height="947" alt="image" src="https://github.com/user-attachments/assets/e6267f81-0816-454c-a748-82a7d109d759" />
+
 `PostgreSQL Query Log Monitor` is a free, open-source desktop app for capturing and inspecting PostgreSQL query logs.
 
 It is built with Tauri, React, TypeScript, and a Rust backend. Instead of polling `pg_stat_activity`, the current product reads PostgreSQL log files, stores captured statements locally in SQLite, and presents them in a table-first desktop UI with filters, details, pagination, and per-source history.
